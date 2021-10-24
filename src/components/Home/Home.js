@@ -13,7 +13,7 @@ const Home = () => {
         <main>
           <div className="first-row">
             {manga.map((m) => (
-              <MangasList m={m} />
+              <MangasList m={m} key={m.id} />
             ))}
           </div>
         </main>
