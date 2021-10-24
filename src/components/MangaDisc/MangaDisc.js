@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import { useParams } from "react-router-dom";
 import "./MangaDisc.css";
+import { MangaContext } from "../MangaCont";
 
 const MangaDisc = () => {
+  const [manga, setManga] = useContext(MangaContext);
+  const { id } = useParams();
   return (
     <div className="container">
       <nav>
@@ -19,11 +23,13 @@ const MangaDisc = () => {
       </nav>
       <main>
         <div className="left-side">
-          <div className="beast"></div>
+          <div className="beast">
+            <img src="#" alt="" />
+          </div>
         </div>
         <div className="right_side">
           <div className="name">
-            <h2>BEASTARS</h2>
+            <h2>{manga.name}</h2>
             <h4>( 6.3k )</h4>
             <i className="fas fa-star" />
             <div>
@@ -32,19 +38,7 @@ const MangaDisc = () => {
             </div>
           </div>
           <div className="discreption">
-            <p>
-              In a world populated by anthropomorphic animals, herbivores and
-              carnivores coexist with each other. For the adolescences of
-              Cherryton Academy, school life is filled with hope, romance,
-              distrust, and uneasiness.The main character is Regoshi the wolf, a
-              member of the drama club. Despite his menacing appearance, he has
-              a very gentle heart. Throughout most of his life, he has always
-              been an object of fear and hatred by other animals, and he's been
-              quite accustomed to that lifestyle. But soon, he finds himself
-              becoming more involved with his fellow classmates who have their
-              own share of insecurities and finds his life in school changing
-              slowly.
-            </p>
+            <p>{manga.disc}</p>
             <p>Published Sep 8, 2016 to Oct 8, 2020</p>
           </div>
           <div className="category">
@@ -53,6 +47,7 @@ const MangaDisc = () => {
             <button>Slice of Life</button>
             <button>Violence</button>
           </div>
+
           <div className="mangaka">
             <p>mangaka : Paru Itagaki</p>
           </div>
