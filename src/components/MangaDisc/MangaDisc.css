@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+nav {
+  background-color: #264653;
+  padding: 20px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header div:nth-of-type(1) {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.yelow {
+  background-color: #ffb703;
+  color: #000;
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.logo-name h3 {
+  color: #fff;
+  font-weight: 400;
+}
+
+.logo-name h2 {
+  color: #ffb703;
+  font-weight: 500;
+}
+
+main {
+  display: flex !important;
+  margin: 40px 20px;
+  border: 1px #eae2b7 solid;
+  border-radius: 5px;
+}
+
+.right_side div:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+}
+.name {
+  gap: 10px;
+}
+
+.name i {
+  color: #ffb703;
+  font-size: 23px;
+}
+
+.name h4 {
+  color: #858585;
+}
+#grey-10 {
+  color: #858585;
+}
+
+.right_side {
+  padding-left: 25px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.discreption p {
+  padding-top: 20px;
+  line-height: 30px;
+  font-size: 18px;
+}
+.discreption p:nth-of-type(2) {
+  color: #858585;
+}
+
+.category button {
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.category button:nth-of-type(1) {
+  background-color: #2a9d8f;
+}
+.category button:nth-of-type(2) {
+  background-color: #e9c46a;
+}
+.category button:nth-of-type(3) {
+  background-color: #f4a261;
+}
+.category button:nth-of-type(4) {
+  background-color: #e76f51;
+}
+.fa-eye {
+  margin-right: 5px;
+}
+
+.beast {
+  background-image: url(../../img/beastars.jpg);
+  width: 500px;
+  height: 717.14px;
+  background-size: cover;
+}
