@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useRef, useState } from "react";
 import "./Home.css";
 import Header from "../Header/Header";
 import MangasList from "../MangaList/MangasList";
@@ -6,6 +6,7 @@ import { MangaContext } from "../MangaCont";
 
 const Home = () => {
   const [manga, setManga] = useContext(MangaContext);
+
   return (
     <>
       <div>

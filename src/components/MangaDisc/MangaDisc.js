@@ -5,10 +5,16 @@ import { MangaContext } from "../MangaCont";
 
 const MangaDisc = () => {
   const [manga, setManga] = useContext(MangaContext);
+
   const { id } = useParams();
+
+  const serie = manga.filter((m) => m.id === parseInt(id));
+
+  console.log(serie[0]);
+
   return (
     <div>
-      <div key={manga.id} className="container">
+      <div className="container">
         <nav>
           <header>
             <div className="logo-name">
@@ -25,12 +31,12 @@ const MangaDisc = () => {
         <main>
           <div className="left-side">
             <div className="beast">
-              <img src="#" alt="" />
+              <img src="#" alt={serie[0].name} />
             </div>
           </div>
           <div className="right_side">
             <div className="name">
-              <h2>{id}</h2>
+              <h2>{serie[0].name}</h2>
               <h4>( 6.3k )</h4>
               <i className="fas fa-star" />
               <div>
@@ -39,7 +45,7 @@ const MangaDisc = () => {
               </div>
             </div>
             <div className="discreption">
-              <p>{id}</p>
+              <p>{serie[0].disc}</p>
               <p>Published Sep 8, 2016 to Oct 8, 2020</p>
             </div>
             <div className="category">

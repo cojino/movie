@@ -7,6 +7,7 @@ export const MangaProvider = (props) => {
     {
       id: 1,
       name: "shuumatsu no valkyrie",
+
       img: "./img/shuumatsu_no_valkyrie.png",
       disc: "Every 1000 years, gods of every pantheon convene and hold a conference to decide the fate of humanity by calling a vote to determine whether or not the human race should continue living or go extinct. With the most recent of these conferences having concluded, the gods unanimously decided to put humanity to an end. However, at the very last second, the eldest of the Valkyries, accompanied by the youngest, intervened and made the bold proposition to let humanity have a say in their fate by letting them go against the gods in a series of one-on-one fights to see if they are worthy of continuing to exist. Afraid to let go of their pride, the gods accept this proposal. Thirteen gods will fight against thirteen human champions. The first side to reach seven victories will decide humanity's fate.",
     },

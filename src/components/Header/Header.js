@@ -13,6 +13,7 @@ const Header = () => {
           </div>
           <div className="search">
             <input type="text" />
+
             <button>
               <i className="fas fa-search" />
             </button>
